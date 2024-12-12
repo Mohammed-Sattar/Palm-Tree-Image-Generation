@@ -1,3 +1,16 @@
+"""
+A Generative Adversarial Network (GAN) for generating images of trees based on specific noise 
+and age inputs.
+
+Key Components:
+    Generator Class:
+        Takes noise and age as inputs and generates images.
+        Uses a series of linear layers and Leaky ReLU activations to transform the input into an image.
+    Discriminator Class:
+        Evaluates the generated images to determine if they are real or fake.
+        Also takes age as an input along with the image.
+"""
+
 import torch
 import torch.nn as nn
 import torch.optim as optim

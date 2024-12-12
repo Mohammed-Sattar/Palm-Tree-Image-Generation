@@ -1,3 +1,16 @@
+"""
+A Conditional Generative Adversarial Network (CGAN) for generating tree images based on age 
+and noise inputs.
+
+Key Components:
+    Generator Class:
+        Takes noise and age as inputs and generates images.
+        Uses a series of linear layers and Leaky ReLU activations to transform the input into an image.
+    Discriminator Class:
+        Evaluates the generated images to determine if they are real or fake.
+        Also takes age as an input along with the image.
+"""
+
 import torch
 import torch.nn as nn
 import torch.optim as optim

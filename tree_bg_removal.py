@@ -1,3 +1,14 @@
+"""
+Removing the background from tree images using a segmentation model.
+Key Components:
+    Model Initialization:
+        Loads the DeepLabV3 segmentation model pre-trained on a dataset.
+    Preprocessing Function:
+        Prepares images for segmentation by resizing, normalizing, and converting them to tensors.
+    Post-processing Function:
+        Processes the output from the segmentation model to create a mask and visualize the segmentation results.
+"""
+
 import torch
 from torchvision import models, transforms
 from torchvision.models.segmentation import DeepLabV3_ResNet101_Weights
